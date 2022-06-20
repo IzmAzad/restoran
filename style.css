@@ -707,8 +707,26 @@ body {
   .header {
     /* width: 185%; */
   }
+  .header__title,.header__subtitle {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+  .btn2 {
+    margin-top: 60px;
+  }
+  .header__btn {
+    margin-top: 40px;
+  }
+  
 }
+
 .wrapper {
   min-height: 100%;
   overflow: hidden;
 }
+ const burger = document.querySelector("#burger");
+const menu = document.querySelector("#menu");
+burger.addEventListener("click", () => {
+  menu.classList.toggle("disp");
+});
+console.log("ПРивет мир"); 
